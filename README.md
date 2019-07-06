@@ -2,6 +2,10 @@
 
 Python Crawler is a tool for the purpose of collecting vocabulary on VoiceTube.com and make an output file in .csv format for future usage.
 
+## Prerequirement
+
+Manually save the vocabulary page on VoiceTube.com as VoiceTube.html in this folder.
+
 ## Installation
 
 ```bash
