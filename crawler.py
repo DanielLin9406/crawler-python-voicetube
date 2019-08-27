@@ -3,7 +3,7 @@ import csv
 import sys
 from bs4 import BeautifulSoup
 
-fileName = sys.argv[1:] or 'VoiceTube.html'
+fileName = sys.argv[1:] or 'Template/VoiceTube.html'
 soup = BeautifulSoup(open(fileName), 'lxml')
 word_list = []
 
@@ -67,7 +67,7 @@ for ele in soup.select('.show_control'):
 
     word_list.append(word)
 
-with open('output.csv', 'w', newline='') as csvfile:
+with open('output/output.csv', 'w', newline='') as csvfile:
     # 建立 CSV 檔寫入器
     writer = csv.writer(csvfile, delimiter=';')
     writer.writerows(word_list)
